@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Signup Page</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="fname">Full Name:</label>
+        <input type="text" name="fname" placeholder="John Doe" maxlength="50" required><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" placeholder="example@email.com" maxlength="50" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" minlength="6" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" placeholder="+20 1020304050" required><br>
+
+        <label for="term_selector">Term:</label>
+        <select name="term_selector" required>
+            <option value="select">Select a Term</option>
+            <option value="1">Term 1</option>
+            <option value="2">Term 2</option>
+            <option value="3">Term 3</option>
+            <option value="4">Term 4</option>
+            <option value="5">Term 5</option>
+            <option value="6">Term 6</option>
+            <option value="7">Term 7</option>
+            <option value="8">Term 8</option>
+        </select><br>
+
+        <label for="gender">Gender:</label>
+        <label for="male_gender">Male</label>
+        <input type="radio" name="gender" id="male_gender">
+        <label for="female_gender">Female</label>
+        <input type="radio" name="gender" id="female_gender"><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" required><br>
+
+        <label for="courses">Courses:</label>
+        <label for="database">Database</label>
+        <input type="checkbox" name="courses" id="database">
+        <label for="math">Math</label>
+        <input type="checkbox" name="courses" id="math"><br>
+
+        <label for="file">Upload File:</label>
+        <input type="file" name="file" id="file" required><br>
+
+        <!--The <input type="image"> defines an image as a submit button-->
+        <input type="image" src="images/logo.png" alt="Submit" style="width: 100px;"><br>
+
+        <!--The <input type="hidden"> defines a hidden input field-->
+        <input type="hidden" id="hiddentype" name="hiddentype" value="hidden"><br>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
